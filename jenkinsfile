@@ -1,14 +1,17 @@
+pipeline {
+    agent any
 
-node
-{
-stage 'build'
-echo 'buiding now ...'
-echo 'line'
-stage 'test'
-echo 'line22'
-echo 'build now'
-stage 'deploy'
-echo 'MARVEL'
-stage 'test n deploy'
-echo 'updated'
+    parameters {
+        booleanParam(defaultValue: true, description: '', name: 'userFlag')
+        string(defaultValue: MARVEL, description: '', name: 'userFlag')
+        choice(choices: 'IronMan\nHulk\nSpider-Man\nThor', description: '', name: 'userFlag')
+    }
+
+    stages {
+        stage("foo") {
+            steps {
+                echo "flag: ${params.userFlag}"
+            }
+        }
+    }
 }
