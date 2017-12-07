@@ -4,7 +4,7 @@ pipeline {
     parameters {
         booleanParam(defaultValue: true, description: '', name: 'userFlag')
         string(defaultValue: MARVEL, description: '', name: 'userFlag')
-        choice(choices: 'IronMan\nHulk\nSpider-Man\nThor', description: '', name: 'userFlag')
+        choice(choices: 'IronMan\nHulk\nSpider-Man\nThor', description: '')
     }
 
     stages {
