@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     parameters {
         booleanParam(defaultValue: true, description: '', name: 'userFlag')
         string(defaultValue: MARVEL, description: '', name: 'userFlag')
