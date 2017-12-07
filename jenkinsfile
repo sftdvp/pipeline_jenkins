@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage("foo") {
             steps {
-                echo "flag: ${params.ENVIRONMENT}"
+                echo "flag: ${params.userFlagT}"
             }
         }
     }
