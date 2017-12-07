@@ -1,16 +1,11 @@
-pipeline {
-    agent any
-    parameters {
-        booleanParam(defaultValue: true, description: '', name: 'Check for True')
-        string(defaultValue: "MARVEL", description: '', name: 'Enter any Name')
-        choice(choices: 'IronMan\nHulk\nSpider-Man\nThor', description: '', name: 'Select a Hero')
-    }
+node
+{
+stage '1'
+echo 'a'
+stage '2'
+echo 'b'
+stage '3'
+echo 'c'
 
-    stages {
-        stage("foo") {
-            steps {
-                echo "flag: ${params.userFlagT}"
-            }
-        }
-    }
+
 }
