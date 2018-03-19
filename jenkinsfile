@@ -8,7 +8,6 @@ stage '3'
 echo 'c'
 stage '4'
 echo 'd'
-
 }
 //qwyu
 //qwio
