@@ -9,7 +9,4 @@ echo 'c'
 stage '4'
 echo 'd'
 
-
-
-
 }
